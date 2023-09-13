@@ -2,8 +2,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client"; // llamada al React DOM para renderizar componentes
 
-import { FirstApp } from './FirstApp';
-// import { CounterApp } from './CounterApp';
+// import { FirstApp } from './FirstApp';
+import { CounterApp } from './CounterApp';
 
 import './styles.css';
 
@@ -11,4 +11,6 @@ import './styles.css';
  
 // react 18
 const root = createRoot(document.getElementById('root'));
-root.render(<FirstApp title="Hola, soy Lucia" />);
+// root.render(<FirstApp title="Hola, soy Lucia" />);
+root.render(<CounterApp value={ 20 } />);
+
